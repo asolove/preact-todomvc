@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server",
     "start": "http-server build -p ${PORT:-8080}",
     "prestart": "npm run build",
-    "build": "mkdirp build && ncp src/index.html build/index.html && webpack -p",
+    "build": "mkdirp build && ncp src/index.html build/index.html && webpack -p && cd build && sw-precache --config=../sw-precache-config.json --verbose",
     "deploy": "gh-pages -d build"
   },
   "keywords": [
@@ -31,6 +31,7 @@
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "style-loader": "^0.13.0",
+    "sw-precache": "^4.0.0",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },

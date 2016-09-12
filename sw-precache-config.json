@@ -1,0 +1,9 @@
+{
+  "rootDir": "build",
+  "staticFileGlobs": [
+    "*.css",
+    "*.html",
+    "*.js"
+  ],
+  "stripPrefix": "build/"
+}
