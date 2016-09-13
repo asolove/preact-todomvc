@@ -1,9 +1,16 @@
-# Preact TodoMVC
+# Todo CRDT
 
-[**Demo**](https://preact-todomvc.surge.sh)
+An in-development experiment with the classic todos app: offline & collaborative editing using CRDTs.
 
-TodoMVC done in [Preact]. The app is 7kb of minified + gzipped JavaScript.
+## Progress
 
-This is an ES6 + Preact port of the [ES5 + React TodoMVC example](https://github.com/tastejs/todomvc/tree/gh-pages/examples/react).
+- [X] Use Preact TodoMVC implementation for view layer and model interface.
+- [X] Add ServiceWorker so the app works offline
+- [ ] Replace model layer with CRDTs
+- [ ] Synchronize changes across clients with Lasp backend.
+- [ ] Enforce weak invariant from backend in frontend model.
 
-[preact]: https://github.com/developit/preact
+## Acknowledgements
+
+- Thanks to the [TodoMVC project](http://todomvc.com) for the original idea and shared images and styles.
+- THanks to @developit's [TodoMVC Preact implementation](https://github.com/developit/preact-todomvc) for the original implementation of the view layer.
