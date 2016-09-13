@@ -31,7 +31,7 @@
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "style-loader": "^0.13.0",
-    "sw-precache": "^4.0.0",
+    "sw-precache": "git://github.com/asolove/sw-precache.git#navigation-fallback-config",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
